@@ -1,0 +1,16 @@
+[package]
+edition = "2021"
+name = "cli"
+version = "0.1.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+chrono = {version = "0.4.24", features = ["serde"]}
+clap = {version = "4.2.1", features = ["derive", "wrap_help"]}
+common = {version = "0.1.0", path = "../common"}
+csv = "1.2.1"
+db = {version = "0.1.0", path = "../db"}
+owo-colors = "3.5.0"
+tabled = {version = "0.10.0", features = ["color"]}
+tokio = {version = "1", features = ["full"]}

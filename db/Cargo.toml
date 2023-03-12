@@ -1,0 +1,16 @@
+[package]
+edition = "2021"
+name = "db"
+version = "0.1.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+chrono = {version = "0.4.24", features = ["serde"]}
+common = {version = "0.1.0", path = "../common"}
+csv = "1.2.1"
+home = "0.5.4"
+owo-colors = "3.5.0"
+serde = "1.0.159"
+serde_trim = "0.4.0"
+sqlx = {version = "0.7.0-alpha.2", features = ["sqlite", "macros", "runtime-tokio-rustls", "chrono"]}
